@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>News — JuneTrail</title>
+  <meta name="description" content="Latest automotive and 4x4 industry news for Australian conditions." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-list page-news">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="section-header">
+      <h1>News</h1>
+      <p class="muted">Industry updates, announcements and short news from the 4x4 world.</p>
+    </div>
+
+    <div id="news-list" class="grid cards-grid"></div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data/news.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/content.js"></script>
+  <script>
+    components.init();
+    content.renderList('news', '#news-list');
+  </script>
+</body>
+</html>

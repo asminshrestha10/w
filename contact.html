@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact — JuneTrail</title>
+  <meta name="description" content="Contact JuneTrail." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-contact">
+  <div id="site-header"></div>
+
+  <main class="container narrow">
+    <div class="section-header">
+      <h1>Contact JuneTrail</h1>
+      <p class="muted">Get in touch for editorial enquiries, PR or partnerships.</p>
+    </div>
+
+    <article class="content">
+      <form id="contact-form">
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Message <textarea name="message" rows="6" required></textarea></label>
+        <p class="muted">This form is client-side only. Replace with your preferred contact form provider to receive messages.</p>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </article>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/components.js"></script>
+  <script>
+    components.init();
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('This is a static demo. To receive messages, integrate a contact provider or replace this form with your service.');
+    });
+  </script>
+</body>
+</html>

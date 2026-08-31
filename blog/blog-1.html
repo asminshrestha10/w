@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>How to Choose a Winch — JuneTrail Guide</title>
+  <meta name="description" content="A long-form guide explaining winch selection, electrical loads, line types and practical installation tips." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="page-item page-article">
+  <div id="site-header"></div>
+
+  <main class="container narrow">
+    <nav class="breadcrumbs"><a href="../index.html">Home</a> › <a href="../blog.html">Blog</a> › How to Choose a Winch</nav>
+
+    <article class="content">
+      <header>
+        <h1>How to Choose a Winch</h1>
+        <p class="muted">Author: JuneTrail • Date: 2026-07-01 • Category: Guides</p>
+      </header>
+
+      <figure class="hero-figure">
+        <img alt="Winch guide image" src="../images/blog/blog-1.svg" />
+      </figure>
+
+      <section>
+        <p>Introduction: Choose a winch based on line pull, duty cycle, and real-world needs. Below is engineering-first guidance; this is general information and not a claim of testing.</p>
+      </section>
+
+      <h2>Line Pull and Safety</h2>
+      <p>Discuss calculation of working load limits, snatch blocks and load doubling. Include example table for selection:</p>
+
+      <table class="specs">
+        <tr><th>Vehicle GVW (approx)</th><th>Recommended minimum winch rating</th></tr>
+        <tr><td>2,500 kg</td><td>6,000–8,000 lb</td></tr>
+        <tr><td>3,500 kg</td><td>8,000–12,000 lb</td></tr>
+      </table>
+
+      <h2>Electrical Considerations</h2>
+      <p>Explain alternator load, battery sizing and duty cycle. Recommends professional wiring for continuous use.</p>
+
+      <h2>Practical Installation</h2>
+      <p>Mounting, fairlead choice, remote switching and thermal protection.</p>
+
+      <div class="affiliate-disclosure">
+        <strong>Affiliate Disclosure:</strong> The links in this article may be affiliate links. We will never let this influence our technical analysis.
+      </div>
+
+      <section class="share">
+        <button class="btn" onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'_blank')">Share on Facebook</button>
+        <button class="btn" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href),'_blank')">Share on X</button>
+        <button class="btn" onclick="navigator.clipboard.writeText(location.href).then(()=>alert('Link copied'))">Copy Link</button>
+      </section>
+
+      <h2>Related products</h2>
+      <div id="related-products" class="grid cards-grid small"></div>
+
+    </article>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../data/products.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/content.js"></script>
+  <script>
+    components.init();
+    content.renderRelated('products', '#related-products', 3);
+  </script>
+</body>
+</html>

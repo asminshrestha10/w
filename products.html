@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Products — JuneTrail</title>
+  <meta name="description" content="Engineering-based product reviews for 4x4 gear." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-list page-products">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="section-header">
+      <h1>Products</h1>
+      <p class="muted">Suspension, winches, lighting, recovery gear and more — engineering-first reviews.</p>
+    </div>
+
+    <div id="products-list" class="grid cards-grid"></div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data/products.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/content.js"></script>
+  <script>
+    components.init();
+    content.renderList('products', '#products-list');
+  </script>
+</body>
+</html>

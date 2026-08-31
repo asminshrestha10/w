@@ -1,0 +1,124 @@
+/* JuneTrail — simple, clean black-and-white theme */
+/* Fonts: Inter for UI, Merriweather for headings */
+:root{
+  --bg:#ffffff;
+  --text:#111111;
+  --muted:#777;
+  --accent:#000;
+  --card-bg:#fafafa;
+  --dark-bg:#0f0f0f;
+  --max-width:1200px;
+  --gap:20px;
+  --radius:8px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.narrow{max-width:860px}
+.lead{font-size:1.05rem;color:var(--muted)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block;border-radius:6px}
+
+/* Header */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 24px;
+  position:sticky;top:0;z-index:30;
+  background:linear-gradient(to bottom, rgba(255,255,255,0.98), rgba(255,255,255,0.95));
+  border-bottom:1px solid #eee;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;font-weight:800;font-family:Merriweather, serif;
+  letter-spacing:1px;font-size:20px;color:var(--accent)
+}
+.brand img{height:36px}
+.nav{
+  display:flex;align-items:center;gap:12px;
+}
+.nav a{padding:8px 10px;border-radius:6px;font-weight:600;font-size:14px;color:var(--muted)}
+.nav a:hover{background:#1111110f;color:var(--accent)}
+.search {
+  display:flex;align-items:center;gap:8px;margin-left:12px;
+}
+.search input{
+  border:1px solid #ddd;padding:8px 10px;border-radius:6px;min-width:220px;background:#fff;
+}
+.hamburger{display:none;border:0;background:transparent;padding:8px}
+
+/* Hero */
+.hero{padding:40px 0}
+.hero-inner{display:flex;gap:30px;align-items:center;justify-content:space-between}
+.hero-text h1{font-family:Merriweather, serif;font-size:40px;margin:0 0 8px}
+.hero-text .lead{margin-bottom:16px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid #111;background:#fff;color:#111;font-weight:700}
+.btn-primary{background:#111;color:#fff;border-color:#111}
+
+/* Sections */
+.section{padding:36px 0;border-top:1px solid #f2f2f2}
+.section.dark{background:var(--dark-bg);color:#fff}
+.section .section-header{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.section .section-header h2{font-family:Merriweather, serif;margin:0;font-size:22px}
+.link-more{font-size:14px;color:var(--muted)}
+
+/* Cards grid */
+.grid{display:grid;gap:var(--gap)}
+.cards-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{
+  background:var(--card-bg);padding:12px;border-radius:8px;border:1px solid #eee;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 10px 24px rgba(0,0,0,0.06)}
+.card.small{padding:8px}
+.card .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+.card h3{margin:0 0 8px;font-size:16px;font-family:Merriweather,serif}
+.card .excerpt{font-size:14px;color:#333}
+
+/* Footer */
+.footer{
+  padding:28px 24px;background:#111;color:#fff;margin-top:40px;border-top:4px solid #000;
+}
+.footer .footer-inner{max-width:var(--max-width);margin:0 auto;display:flex;gap:24px;align-items:flex-start;justify-content:space-between}
+.footer .col{flex:1}
+.footer a{color:#ddd}
+.social{display:flex;gap:8px;margin-top:10px}
+
+/* Article content */
+.content h2{font-family:Merriweather, serif;font-size:20px;margin-top:18px}
+.content p{color:#222}
+.hero-figure{margin:12px 0}
+.specs{width:100%;border-collapse:collapse;margin:10px 0}
+.specs th,.specs td{padding:8px;border:1px solid #eee;text-align:left}
+
+/* Breadcrumbs */
+.breadcrumbs{font-size:13px;color:var(--muted);margin:8px 0}
+
+/* Two-column area */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column}
+  .nav{display:none}
+  .hamburger{display:inline-flex}
+  .search input{min-width:120px}
+  .two-col{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+}
+
+/* Small cards */
+.cards-grid.small .card{padding:10px}

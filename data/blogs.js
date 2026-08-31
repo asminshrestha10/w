@@ -1,0 +1,15 @@
+/* Demo blogs
+   Fields: id, slug, title, date, author, category, image, excerpt, content
+*/
+window.jtBlogs = [
+  { id: "b1", slug: "how-to-choose-a-winch", title: "How to Choose a Winch", date: "2026-07-01", author: "JuneTrail", category: "Guides", image: "images/blog/blog-1.svg", excerpt: "Choose a winch based on realistic load calculations and installation requirements.", content: "Long form demo content." },
+  { id: "b2", slug: "suspension-upgrade-guide", title: "Suspension Upgrade Guide", date: "2026-06-15", author: "JuneTrail", category: "Tech", image: "images/blog/blog-2.svg", excerpt: "How to plan and budget a suspension upgrade for touring.", content: "Long form demo content." },
+  { id: "b3", slug: "tyres-for-australia", title: "Choosing Tyres for Australian Conditions", date: "2026-06-01", author: "JuneTrail", category: "Tyres", image: "images/blog/blog-3.svg", excerpt: "Selecting tyres for terrain and conditions in Australia.", content: "Long form demo content." },
+  { id: "b4", slug: "battery-management", title: "Battery Management for Tours", date: "2026-05-20", author: "JuneTrail", category: "Electrical", image: "images/blog/blog-4.svg", excerpt: "Practical tips for planning power on long trips.", content: "Long form demo content." },
+  { id: "b5", slug: "towing-basics", title: "Understanding Towing Ratings", date: "2026-05-05", author: "JuneTrail", category: "Guides", image: "images/blog/blog-5.svg", excerpt: "What towing ratings mean and how to interpret them.", content: "Long form demo content." },
+  { id: "b6", slug: "recovery-gear-checklist", title: "Recovery Gear Checklist", date: "2026-04-20", author: "JuneTrail", category: "Safety", image: "images/blog/blog-6.svg", excerpt: "A compact checklist for on-trail recovery essentials.", content: "Long form demo content." },
+  { id: "b7", slug: "roof-rack-choices", title: "Roof Rack Choices", date: "2026-04-05", author: "JuneTrail", category: "Accessories", image: "images/blog/blog-7.svg", excerpt: "Which roof rack suits which touring needs.", content: "Long form demo content." },
+  { id: "b8", slug: "bash-plate-buying-guide", title: "Bash Plate Buying Guide", date: "2026-03-22", author: "JuneTrail", category: "Protection", image: "images/blog/blog-8.svg", excerpt: "Buying a bash plate for peace of mind.", content: "Long form demo content." },
+  { id: "b9", slug: "tyre-pressure-tips", title: "Tyre Pressure Tips", date: "2026-03-05", author: "JuneTrail", category: "Guides", image: "images/blog/blog-9.svg", excerpt: "How to set tyre pressures for touring vs off-road.", content: "Long form demo content." },
+  { id: "b10", slug: "safety-electronics", title: "Safety Electronics Overview", date: "2026-02-20", author: "JuneTrail", category: "Tech", image: "images/blog/blog-10.svg", excerpt: "Understanding electronics that improve safety and capability.", content: "Long form demo content." }
+];

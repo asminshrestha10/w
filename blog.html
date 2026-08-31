@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Blog — JuneTrail</title>
+  <meta name="description" content="In-depth articles, opinion pieces and engineering explanations for 4x4 enthusiasts." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-list page-blog">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="section-header">
+      <h1>Blog</h1>
+      <p class="muted">Longer articles and guides with technical explanations and real-world context.</p>
+    </div>
+
+    <div id="blog-list" class="grid cards-grid"></div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data/blogs.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/content.js"></script>
+  <script>
+    components.init();
+    content.renderList('blogs', '#blog-list');
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Explore. Test. Understand. — JuneTrail</title>
+  <meta name="description" content="JuneTrail — 4x4 vehicles, engineering-based product reviews, news, guides and adventure content." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:title" content="JuneTrail — Explore. Test. Understand." />
+  <meta property="og:description" content="4x4 vehicles, engineering-based product reviews, news and guides." />
+  <meta property="og:image" content="images/logo/junetrail_blue_logo.svg" />
+  <link rel="canonical" href="https://your-site.github.io/" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-home">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Explore. Test. Understand.</h1>
+          <p class="lead">4x4 vehicles, products, engineering insights, news and guides.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="vehicles.html">Explore Vehicles</a>
+            <a class="btn" href="blog.html">Read Latest Articles</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img alt="Off-road placeholder" src="images/hero/hero-offroad.svg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured vehicles -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Featured Vehicles</h2>
+        <a class="link-more" href="vehicles.html">View all vehicles</a>
+      </div>
+      <div id="featured-vehicles" class="grid cards-grid"></div>
+    </section>
+
+    <!-- Featured products -->
+    <section class="section dark">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <a class="link-more" href="products.html">View all products</a>
+      </div>
+      <div id="featured-products" class="grid cards-grid"></div>
+    </section>
+
+    <!-- Latest news -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Latest News</h2>
+        <a class="link-more" href="news.html">View all news</a>
+      </div>
+      <div id="latest-news" class="grid cards-grid"></div>
+    </section>
+
+    <!-- Latest blog -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Latest Blog Articles</h2>
+        <a class="link-more" href="blog.html">View blog</a>
+      </div>
+      <div id="latest-blogs" class="grid cards-grid"></div>
+    </section>
+
+    <!-- Latest guides -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Guides</h2>
+        <a class="link-more" href="guides.html">View all guides</a>
+      </div>
+      <div id="latest-guides" class="grid cards-grid"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="data/vehicles.js"></script>
+  <script src="data/products.js"></script>
+  <script src="data/news.js"></script>
+  <script src="data/blogs.js"></script>
+  <script src="data/guides.js"></script>
+
+  <script src="js/components.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    // Initialize header/footer and render home sections
+    components.init();
+    content.renderHome({
+      vehiclesEl: '#featured-vehicles',
+      productsEl: '#featured-products',
+      newsEl: '#latest-news',
+      blogsEl: '#latest-blogs',
+      guidesEl: '#latest-guides',
+      itemsLimit: 6
+    });
+  </script>
+</body>
+</html>
